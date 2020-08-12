@@ -1,3 +1,5 @@
+require "future"
+
 class Logger
   @done_signal = "---DONE---"
 
@@ -38,7 +40,7 @@ class Logger
     File.delete(@log_name) if File.exists?(@log_name)
 
     # Run the command in the background
-    called = future {
+    called = ::future {
       system(@command)
     }
 

@@ -13,3 +13,7 @@ license: MIT
 dependencies:
   ydl_binaries:
     github: cooperhammond/ydl-binaries
+  json_mapping:
+    github: crystal-lang/json_mapping.cr
+  future:
+    github: crystal-community/future.cr
